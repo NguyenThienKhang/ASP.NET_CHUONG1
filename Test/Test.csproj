@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\emages\" />
+    <Compile Remove="wwwroot\emages\**" />
+    <Content Remove="wwwroot\emages\**" />
+    <EmbeddedResource Remove="wwwroot\emages\**" />
+    <None Remove="wwwroot\emages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

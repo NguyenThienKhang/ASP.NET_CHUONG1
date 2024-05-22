@@ -31,7 +31,7 @@ namespace Test.Controllers
                 // Xử lý uploads
                 string fileName = Guid.NewGuid().ToString()+ Path.GetExtension(FHinh.FileName);
                 string path = Path.Combine(hosting.WebRootPath, "images");
-                using (var filestream=new FileStream(Path.Combine(path, fileName), FileMode.Create))
+                using (var filestream=new FileStream(Path.Combine(path,fileName), FileMode.Create))
                 {
                     // sao chép lên server
                     FHinh.CopyTo(filestream);

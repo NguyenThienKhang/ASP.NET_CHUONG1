@@ -83,7 +83,7 @@ namespace Test.Controllers
             }
            // ViewData["K"] = ketQua;
             ViewBag.KQ = ketQua;
-            return View();
+            return View("Index");
         }
     }
 }
